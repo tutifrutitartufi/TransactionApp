@@ -25,6 +25,10 @@
   margin-bottom: 50px;
 }
 
+.App-total-info {
+  margin: 20px 0;
+}
+
 .MuiCircularProgress-root {
   position: fixed;
   top: 50%;

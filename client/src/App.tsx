@@ -87,8 +87,8 @@ function App() {
             Total amount of ETH
           </Button>
         </div>
-        <div>
-          {totalAmount && <div>Total ETH Amount on Date: {totalAmount}</div>}
+        <div className="App-total-info">
+          <div>{<div>Total ETH Amount on Date: {totalAmount}</div>}</div>
         </div>
         <DataGrid
           getRowId={(row) => row?.blockNumber + row?.hash}

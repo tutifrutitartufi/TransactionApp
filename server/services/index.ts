@@ -5,7 +5,7 @@ export const getTransactions = async (
   startingBlock: string
 ) => {
   try {
-    const url = `https://api.etherscan.io/api?module=account&address=${address}&startblock=${startingBlock}&action=txlist&apikey=${process.env.API_KEY}}`;
+    const url = `https://api.etherscan.io/api?module=account&address=${address}&startblock=${startingBlock}&action=txlist&apikey=${process.env.API_KEY}&sort=asc`;
     const response = await fetch(url);
 
     if (!response.ok) {
